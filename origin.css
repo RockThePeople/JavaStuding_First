@@ -1,0 +1,245 @@
+html {
+    overflow-y: scroll;
+    background-color: black;
+    color: #fff;
+    margin: 0;
+}
+
+a:link, a:visited { color:#fff; text-decoration: none; }
+
+* { 
+    box-sizing: border-box; 
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body { 
+    display: block; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Home page */
+#mono_head {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 57px;
+    font-family: 'DM Serif Display', serif;
+}
+
+@media (max-width: 960px) {
+    #mono_head {
+        transition: 0.15s;
+        font-size: 30px;
+    }
+}
+
+#mono_menu {
+    text-align: center;
+    font-size: 45px;
+    width: 100%;
+    font-family: 'DM Serif Display', serif;
+}
+
+@media (max-width: 960px) {
+    #mono_menu{
+        transition: 0.15s;
+        font-size: 30px;
+    }
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+li {
+    display: list-item;
+    text-align: center;
+    margin: 0;
+    padding: 60px 0;
+    list-style-type: none;
+}
+
+li:hover{
+    transition: 0.15s;
+    text-decoration: underline;
+    background: #222;
+    cursor: pointer;
+}
+
+/* Order */
+#orders {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+#p1, #p2 {
+    width: max-content;
+    padding: 10px;
+}
+
+#p_head {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+#p1:hover{
+    box-shadow: 0 0 5px #ccc;
+    transition: 0.1s;
+}
+
+#p2:hover{
+    box-shadow: 0 0 5px #ccc;
+    transition: 0.1s;
+}
+
+/*Order child pages*/
+#p1_detail {
+    width: 600px;
+    height: 900px;
+    text-align: left;
+}
+
+#selection {
+    box-sizing: border-box;
+    background-color: #555;
+    color: white;
+    vertical-align:middle;
+    padding-left: 5px;
+    width: 500px;
+    height: 50px;
+    font-size: 18px;
+}
+
+#extrafile {
+    margin-top: 30px;
+    background-color: #fff;
+    color: black;
+    width: 500px;
+    height: 50px;
+    padding-left: 10px;
+    display: flex;
+    align-items:center;
+}
+
+#filebutton { height: 20px; }
+
+#buybutton {
+    margin-top: 30px;
+    border-radius: 3px;
+    background-color:dodgerblue;
+    color:white;
+    font-weight: bolder;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#service_detail{
+    text-align: center;
+}
+
+#provide, #refund{
+    max-width: 1100px;
+}
+
+/* How to use? */
+
+#section {
+    padding: 0 135px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#section h1 { font-size: 24px; }
+
+#d1 { margin-top: 50px; }
+#d2 { margin-top: 115px; }
+#d3 { margin: 40px 0; }
+
+#section p {
+    line-height: 150%;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+@media (max-width: 960px) {
+    #section{
+        flex-direction: column;
+        transition: 0.15s;
+    }
+}
+
+#example {
+    margin: 50px 0;
+    font-family: 'DM Serif Display', serif;
+    box-sizing: border-box;
+    border: 1px #fff solid;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* q&a page */
+#qna {
+    margin: auto;
+    background-color: #fff;
+    max-width: 1200px;
+    color: #000;
+    border-radius: 5px;    
+}
+
+#qna_head {
+    font-size: 30px;
+    text-align: center;
+    font-weight:500;
+    border-bottom: 2px solid #000;
+    height: 120px;
+    padding: 45px;
+}
+
+#qna_body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 500px;
+    text-align: center;
+}
+#qna_body::after{ content:""; display: block; clear: both;}
+
+#articlesort {
+    padding: 0 10px;
+    font-size: 15px;
+    color: #222;
+}
+
+#nextPage, #prevPage{
+    height: fit-content;
+    width: fit-content;
+    font-size: 10px;
+    color: #222;
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+}
+
+/* footer */
+#footer {
+    border-top: 1px solid white;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
